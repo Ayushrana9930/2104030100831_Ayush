@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #d36767;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:#36b3aa;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>CAR</h2>
+</header>
+<hr>
+<section>
+  <nav>
+    <ul>
+     <img src="images/logo.png" style="height:200px;width:350px;"/>
+     
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>KIA</h1>
+    <p>Kia Corporation, commonly known as Kia, is a South Korean multinational automobile manufacturer headquartered in Seoul, South Korea. </p>
+    <p> It is South Korea's second largest automobile manufacturer, after its parent company, Hyundai Motor Company, with sales of over 2.8 million vehicles in 2019. 
+</p>
+  </article>
+  
+</section>
+<hr>
+<section>
+  <nav>
+    <ul>    
+    <img src="images/gls.jpg" style="height:200px;width:350px;"/>
+      </ul>
+  </nav>
+  
+  <article>
+    <h1>HONDA</h1>
+    <p>There are a total of 6 Honda models currently on sale in India.</p>
+	<p>These include 4 Sedans, 1 Hatchback and 1 SUV. Honda car prices in India: The price of Honda cars in India starts from 6.44 Lakh for the Amaze while the most expensive Honda car in India one is the City Hybrid with a price of 19.50 Lakh.</p>
+
+  </article>
+  
+</section>
+<hr>
+<section>
+  <nav>
+    <ul>
+	  <img src="images/Indus-University-Logo.png" style="height:200px;width:350px;"/>
+      
+      
+      
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>NEXA</h1>
+    <p>Driven by innovation, premium cars by NEXA personify the passion, progressiveness, and luxury which brand NEXA stand for.</p>
+	<p>Maruti Suzuki Nexa cars range includes the popular Hatchback Baleno and the urban compact SUV IGNIS. It also includes the premium sedan Ciaz, the 3-row MPC XL6, and the crossover S-Cross. For any model, you can choose from variants: Sigma, Delta, Zeta, and Alpha.</p>
+  </article>
+  
+</section>
+<hr>
+
+<footer>
+  <p>Register Now</p>
+</footer>
+
+</body>
+</html>
