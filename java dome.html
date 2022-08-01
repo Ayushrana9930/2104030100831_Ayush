@@ -1,0 +1,16 @@
+<html>
+<body>
+
+<h2>dom Events exmple</h2>
+Enter your name: <input type="text" id="fname" onchange="upperCase()">
+<p>convert tet to the upperCase. </p>
+
+<script>
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+</body>
+</html>
